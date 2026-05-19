@@ -109,3 +109,9 @@ Inspect Changes
 git diff HEAD → Compare working directory with last commit
 git diff branch1 branch2 → Compare branches
 git diff <commit1> <commit2> → Compare two commits
+
+Debugging Tools
+git blame file.txt → See who changed each line
+git bisect start → Find buggy commit
+git bisect good <commit>
+git bisect bad <commit>
