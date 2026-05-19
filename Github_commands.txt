@@ -1,0 +1,106 @@
+1.Setup & Configuration
+git --version → Check installed Git version
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global init.defaultBranch main
+git config --list
+
+2.Create Repository
+git init → Initialize Git in current folder
+git clone <repo-url> → Copy a repo from GitHub
+
+Example:
+
+git clone https://github.com/user/project.git
+
+3.Check Status & History
+git status → See changed files
+git log → Show commit history
+git log --oneline
+git diff → Show unstaged changes
+git diff --staged
+
+4.Add & Commit Files
+git add file.txt
+git add . → Add all files
+git commit -m "message"
+git commit -am "message" → Add + commit tracked files
+
+5.Branching
+git branch → List branches
+git branch branch-name
+git checkout branch-name
+git switch branch-name
+git switch -c new-branch
+git checkout -b new-branch
+Merge & Rebase
+git merge branch-name
+git rebase main
+
+6.Abort:
+
+git merge --abort
+git rebase --abort
+Remote Repository
+git remote -v
+git remote add origin <repo-url>
+
+Example:
+
+git remote add origin https://github.com/user/repo.git
+
+7.Push & Pull
+git push
+git push origin main
+git push -u origin main
+git pull
+git fetch
+Undo Changes
+Before commit
+git restore file.txt
+git restore .
+Unstage files
+git restore --staged file.txt
+Undo commit
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+Stash
+git stash
+git stash list
+git stash apply
+git stash pop
+Delete Branches
+git branch -d branch-name
+git branch -D branch-name
+
+8.Remote delete:
+
+git push origin --delete branch-name
+Tags
+git tag
+git tag v1.0
+git push origin v1.0
+GitHub Workflow Commands
+
+9.Typical workflow:
+
+git clone <url>
+git status
+git add .
+git commit -m "Initial commit"
+git push origin main
+
+10.Feature branch workflow:
+
+git checkout -b feature-branch
+git add .
+git commit -m "Added feature"
+git push origin feature-branch
+Useful Advanced Commands
+git cherry-pick <commit-id>
+git reflog
+git blame file.txt
+git clean -fd
+git reset --hard
+git rm file.txt
+git mv old.txt new.txt
