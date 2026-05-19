@@ -1,0 +1,5 @@
+Example Real Workflow
+git switch -c feature-login
+git add .
+git commit -m "add login page"
+git push origin feature-login
