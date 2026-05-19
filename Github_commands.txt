@@ -104,3 +104,8 @@ git clean -fd
 git reset --hard
 git rm file.txt
 git mv old.txt new.txt
+
+Inspect Changes
+git diff HEAD → Compare working directory with last commit
+git diff branch1 branch2 → Compare branches
+git diff <commit1> <commit2> → Compare two commits
